@@ -1,0 +1,160 @@
+{% extends "layouts/detailed-guide.html" %}
+
+{% set selectedNav = "Guidance" %}
+{% set isGuidance = true %}
+
+{% set pageDescription = "How to handle the personal data you gather in user research compliantly and ethically" %}
+
+{% set guidanceTopic = "How to gather and store informed consent" %}
+{% set guidancePageName = "How to store UR personal data in DfE SharePoint and other software and tools" %}
+{% set seoPageName = guidanceTopic + " - " + guidancePageName %}
+{% set pageRoot = "/guidance/personal-data-management-26/" %}
+{% set prevLinkText = "Set up a restricted folder in DfE SharePoint" %}
+{% set prevLinkURL = pageRoot + "3.html" %}
+{% set nextLinkText = "How to gather, use and share UR personal data correctly" %}
+{% set nextLinkURL = pageRoot + "5.html" %}
+
+
+
+{# --------- Contents links ------------------------------------------------------ #}
+{% block contents %}
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}index.html">Overview</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}2.html">Check if you need a DPIA</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}3.html">Set up a restricted folder in DfE SharePoint</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  How to store UR personal data in DfE SharePoint and other software and tools
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}5.html">How to gather, use and share UR personal data correctly</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}6.html">What to do if a participant later asks for a copy of their data</a>
+</li>
+{% endblock %}
+
+{# --------- Main page content -------------------------------------------------- #}
+{% block content %}
+{% markdown %}
+
+
+<div class="govuk-warning-text">
+    <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+    <strong class="govuk-warning-text__text">
+      <span class="govuk-warning-text__assistive">Warning</span>
+      ️Putting personal data gathered in user research into any software on online tool not approved for use in DfE could be a serious disciplinary offence
+    </strong>
+</div>
+
+All personal data you collect in user research in DfE must:
+
+- be collected and managed in software or online tools that have been approved for this use in DfE
+- gathered under the correct privacy policy, using an approved DfE UR consent form
+- deleted within the correct retention period. Sometimes this can be done automatically by the software, but often you will need to manage this yourself.
+
+See also:
+
+- [How to gather and store informed consent](/guidance/informed-consent-26/)
+
+
+<div class="govuk-inset-text">
+<p>The following list of software, online tools and scenarios is not exhaustive. You may need have a need to collect and manage personal data in a different way. If so, always get advice from research operations. They may tell you to get further advice from the DfE data protection team.</p>
+</div>
+
+### Normal file (Word, Excel, PowerPoint, etc) containing UR personal data (except some participant recruitment lists)
+
+Any file containing personal data gathered in your user research must:
+
+- be kept in the restricted folder in your team's WorkPlace library in SharePoint
+- have the 'User Research 2 Years' retention label applied
+
+These files will automatically delete after 2 years. You should manually delete them earlier if you no longer need them.
+
+<div class="govuk-inset-text">
+<p>Do not use the 'User Research 2 Years' for user research-related documents which do not contain personal data (for example anonymised analysis, research artefacts, playback decks, etc). Store these as normal in your team folder.</p>
+</div>
+
+Do not store any file containing UR personal data on your laptop, in your OneDrive, or in any other SharePoint or Teams library.
+
+### Participant Recruitment lists and panels
+
+If you have (or are planning to create) a participant recruitment panel or list that you may want to use for more than two years, speak to research operations. They will help ensure you have a robust and compliant plan to manage this data.
+
+<div class="govuk-inset-text">
+<p>We are currently developing new guidance and standards for user research participant recruitment panels and lists. Look out for announcements in the user research community Teams channel.</p>
+</div>
+
+### Emails and calendar entries in Outlook
+
+You will have emails and calendar entries, e.g. online research sessions, that contain participant details or other personal data from your research. These should be deleted within two years.
+
+Keep emails organised in folders in your Outlook and give calendar invites names that you will easily be able to find in a search (e.g. "\[Name\] - research session".
+
+Set yourself a reminder to check periodically, e.g. every three months, and delete anything emails or calendar entries that you no longer need.
+
+If you leave DfE before 2 years, delete them or, if there is still a business need to keep them, transfer them to a colleague in your team, making sure they know what date to delete them by.
+
+Mark calendar invites for research sessions as 'private' in your Outlook calendar so that other people in DfE can't open them and view participants' email addresses.
+
+Tell any other people in your team who receive or are copied on emails, or are on the calendar invites, to do manage them in the same way.
+
+### Videos of research sessions in Teams
+
+Teams video recordings in DfE have a 2 year retention period by default, so you do not need to move or manage them.
+
+You should manually delete them if you no longer have a business need to keep them. Set yourself a reminder to check periodically, e.g. every three months.
+
+Video transcripts in Teams do not have an automated retention policy. You should manually delete them once they are no longer needed. You can do this via the meeting invite in the Teams calendar.
+
+### Personal data collected in other software or cloud services
+
+For personal data gathered or managed in your user research in any other software or online tool (e.g. MS Forms, Qualtrics, Lucid, Lookback, etc), you will normally need to manually manage the personal data.
+
+If the software is installed and saves files on your DfE laptop, move these files into the restricted folder in your Workplace (deleting them from your laptop, including from the trash/recycle bin). Add the 'User Research 2 Years' retention label and delete the files when you no longer need them.
+
+In cloud/online tools, manually delete the personal data within 2 years, or as soon as you no longer need it. Keep the data organised within the tool and set yourself reminders to do this. If you leave DfE before this time, transfer the data to a colleague or delete it.
+
+### AI tools
+
+You must never put UR personal data into any generative AI tool that has not been approved for this use in DfE. If in doubt, check with research operations.
+
+When you do use approved tools (e.g. CoPilot) for analysis or other tasks, be pragmatic about the data you put into the tool. Limit the data you put in to only what you need and take steps to reduce personally identifying details where possible. For example, you could use participants numbers instead of names.
+
+See also:
+
+- [Using generative Artificial Intelligence (AI) in DfE (opens in a new tab, DfE SharePoint users only)](https://educationgovuk.sharepoint.com/sites/IT/SitePages/generative-ai.aspx)
+
+
+
+
+
+
+{% endmarkdown%}
+{% endblock %}
+
+{# --------- Related content (right-hand column) -------------------------------- #}
+{% block related %}
+{% markdown %}
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Further help and advice</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="/community-of-practice/research-operations">Research operations team</a></li>
+</ul>
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Related content</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="/guidance/informed-consent-26/">How to gather and store informed consent</a></li>
+  <li><a class="govuk-link" href="https://educationgovuk.sharepoint.com/sites/lvewp00053" target="_blank">DfE data and information compliance hub (opens in a new tab, DfE SharePoint users only)</a></li>
+</ul>
+
+{% endmarkdown%}
+{% endblock %}
+
+
+
+

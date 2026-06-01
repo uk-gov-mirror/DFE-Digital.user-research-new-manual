@@ -1,0 +1,75 @@
+{% extends "layouts/detailed-guide.html" %}
+
+{% set selectedNav = "Guidance" %}
+{% set isGuidance = true %}
+
+{% set pageDescription = "How to handle the personal data you gather in user research compliantly and ethically" %}
+
+{% set guidanceTopic = "How to gather and store informed consent" %}
+{% set guidancePageName = "What to do if a participant later asks for a copy of their data" %}
+{% set seoPageName = guidanceTopic + " - " + guidancePageName %}
+{% set pageRoot = "/guidance/personal-data-management-26/" %}
+{% set prevLinkText = "How to gather, use and share UR personal data correctly" %}
+{% set prevLinkURL = pageRoot + "5.html" %}
+
+
+
+{# --------- Contents links ------------------------------------------------------ #}
+{% block contents %}
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}index.html">Overview</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}2.html">Check if you need a DPIA</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}3.html">Set up a restricted folder in DfE SharePoint</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}4.html">How to store UR personal data in DfE SharePoint and other software and tools</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}5.html">How to gather, use and share UR personal data correctly</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  What to do if a participant later asks for a copy of their data
+</li>
+{% endblock %}
+
+{# --------- Main page content -------------------------------------------------- #}
+{% block content %}
+{% markdown %}
+
+An individual person can ask DfE for a copy of the personal data we hold about them.
+
+If somebody who has taken part in user research does this, you may receive a request from the Information Rights Team, from research operations, or directly from the research participant.
+
+You must follow the guidance on the [Subject Access Request (SAR) Portal (opens in a new tab, DfE SharePoint users only)](https://educationgovuk.sharepoint.com/sites/lvewp00158/SitePages/Subject-Access-Request-%28SAR%29-Portal.aspx).
+
+You will need to provide all details of the personal data you hold about the individual. For example, recordings, transcripts and email correspondence.
+
+
+{% endmarkdown%}
+{% endblock %}
+
+{# --------- Related content (right-hand column) -------------------------------- #}
+{% block related %}
+{% markdown %}
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Further help and advice</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="/community-of-practice/research-operations">Research operations team</a></li>
+</ul>
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Related content</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="/guidance/informed-consent-26/">How to gather and store informed consent</a></li>
+  <li><a class="govuk-link" href="https://educationgovuk.sharepoint.com/sites/lvewp00053" target="_blank">DfE data and information compliance hub (opens in a new tab, DfE SharePoint users only)</a></li>
+</ul>
+
+{% endmarkdown%}
+{% endblock %}
+
+
+
+

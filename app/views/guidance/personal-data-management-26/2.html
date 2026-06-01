@@ -1,0 +1,118 @@
+{% extends "layouts/detailed-guide.html" %}
+
+{% set selectedNav = "Guidance" %}
+{% set isGuidance = true %}
+
+{% set pageDescription = "How to handle the personal data you gather in user research compliantly and ethically" %}
+
+{% set guidanceTopic = "How to gather and store informed consent" %}
+{% set guidancePageName = "Check if you need a DPIA" %}
+{% set seoPageName = guidanceTopic + " - " + guidancePageName %}
+{% set pageRoot = "/guidance/personal-data-management-26/" %}
+{% set prevLinkText = "Overview" %}
+{% set prevLinkURL = pageRoot + "index.html" %}
+{% set nextLinkText = "Set up a restricted folder in DfE SharePoint" %}
+{% set nextLinkURL = pageRoot + "3.html" %}
+
+
+
+{# --------- Contents links ------------------------------------------------------ #}
+{% block contents %}
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}index.html">Overview</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  Check if you need a DPIA
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}3.html">Set up a restricted folder in DfE SharePoint</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}4.html">How to store UR personal data in DfE SharePoint and other software and tools</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}5.html">How to gather, use and share UR personal data correctly</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}6.html">What to do if a participant later asks for a copy of their data</a>
+</li>
+{% endblock %}
+
+{# --------- Main page content -------------------------------------------------- #}
+{% block content %}
+{% markdown %}
+
+
+
+Before you conduct any research, you must make sure the data you collect is covered by a DPIA (data protection impact assessment).
+
+There are 2 overarching DPIAs for user research that cover data collected in most user research across DfE. Our DPIAs cover both internal and external user research.
+
+You must check whether your planned user research meets the criteria for using the overarching DPIA. If it does, your research is covered and you do not need to do anything else.
+
+However, if your planned activity does not meet the criteria for the overarching DPIA, your research is not covered. You must go through the standard DfE data protection processes.
+
+<div class="govuk-inset-text">
+<p>A DPIA assesses the risks in handling personal data in a project. The overarching DPIA only covers user research activity. Your product or service, if processing personal data, should have a separate DPIA/DPIA screener.</p>
+</div>
+
+### Confirm you can use the overarching DPIA for user research
+
+You must use the DPIA checker tool to confirm your user research is considered low risk and is therefore covered by the overarching DPIA for user research.
+
+<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yXfS-grGoU2187O4s0qC-TpreSlA-ZBGvYu3-EAfbT1UQkJRNEVFMkFaNjgyT1RTM0cySUlTQVVTRy4u" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+Check if you can use the overarching DPIA
+<svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+  <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+</svg>
+</a>
+
+The process takes a few minutes and includes next steps to ensure your user research is compliant.
+
+You cannot use the overarching DPIA if your user research involves:
+
+- High-volume processing (e.g. surveys where you expect to receive more than 5000 responses)
+- Participants under 18
+- Non-user research activities
+- Non-DfE-approved suppliers or systems
+- Profiling or automated decision-making (e.g. participant recruitment activity that is completely automated with no human oversight)
+
+
+### What to do if your research is not covered by the overarching DPIA for user research
+
+If the checker tool identifies that your user research is potentially high risk, you must follow the normal DfE DPIA process (managed by the data protection team).
+
+You will need to complete a high-risk screener document and allow at least 5 working days for the data protection team to review it.
+
+Follow this guidance: <a href="https://educationgovuk.sharepoint.com/sites/lvewp00158/SitePages/DPIA.aspx" target="_blank">Data Protection Impact Assessment (DPIA) portal (opens in a new tab, DfE SharePoint users only)</a>
+
+If the data protection team identifies that your planned research is high risk, you will then need to complete a full DPIA, which can take several weeks. You may find it quicker to combine your user research DPIA with your service DPIA. Speak to your delivery manager to do this, or to research operations for more information. 
+
+
+
+
+
+{% endmarkdown%}
+{% endblock %}
+
+{# --------- Related content (right-hand column) -------------------------------- #}
+{% block related %}
+{% markdown %}
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Further help and advice</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="/community-of-practice/research-operations">Research operations team</a></li>
+</ul>
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Related content</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="/guidance/informed-consent-26/">How to gather and store informed consent</a></li>
+  <li><a class="govuk-link" href="https://educationgovuk.sharepoint.com/sites/lvewp00053" target="_blank">DfE data and information compliance hub (opens in a new tab, DfE SharePoint users only)</a></li>
+</ul>
+
+{% endmarkdown%}
+{% endblock %}
+
+
+
+

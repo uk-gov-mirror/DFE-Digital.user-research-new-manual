@@ -1,0 +1,126 @@
+{% extends "layouts/detailed-guide.html" %}
+
+{% set selectedNav = "Guidance" %}
+{% set isGuidance = true %}
+
+{% set pageDescription = "How to handle the personal data you gather in user research compliantly and ethically" %}
+
+{% set guidanceTopic = "How to store, manage and use personal data" %}
+{% set guidancePageName = "Overview" %}
+{% set seoPageName = guidanceTopic %}
+{% set pageRoot = "/guidance/personal-data-management-26/" %}
+{% set nextLinkText = "Check if you need a DPIA" %}
+{% set nextLinkURL = pageRoot + "2.html" %}
+
+
+
+{# --------- Contents links ------------------------------------------------------ #}
+{% block contents %}
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  Overview
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}2.html">Check if you need a DPIA</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}3.html">Set up a restricted folder in DfE SharePoint</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}4.html">How to store UR personal data in DfE SharePoint and other software and tools</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}5.html">How to gather, use and share UR personal data correctly</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}6.html">What to do if a participant later asks for a copy of their data</a>
+</li>
+{% endblock %}
+
+{# --------- Main page content -------------------------------------------------- #}
+{% block content %}
+{% markdown %}
+
+
+
+<div class="govuk-warning-text">
+    <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+    <strong class="govuk-warning-text__text">
+      <span class="govuk-warning-text__assistive">Warning</span>
+      Incorrectly handling personal data in your user research could be a serious disciplinary offence
+    </strong>
+</div>
+
+You must always gather, store and use the personal data gathered in your user research ethically and compliantly under DfE data management policies. This applies to the personal data you gather directly in your research and when recruiting participants.
+
+Following this guidance correctly ensures that:
+
+- you are handling individuals' personal data legally under UK data laws
+- we are treating our research participants ethically and with respect
+- we can audit and have oversight of how we are handling personal data in user research
+
+You must:
+
+- Check if you need a DPIA (data protection impact assessment) and get one if required
+- Store all personal data you collect correctly in DfE SharePoint, or in approved 3<sup>rd</sup> party tools
+- Collect and handle personal data appropriately throughout and after your research
+- Keep the personal data for no longer than 2 years, using the correct retention labels on files in SharePoint
+- Delete an individual's personal data if they ask you to
+
+### Retention period
+
+The retention period for personal data gathered in user research in DfE is up to 2 years.
+
+You must apply the correct retention label to any file stored in DfE SharePoint that contains personal data. These files will be automatically deleted at 2 years.
+
+If you no longer need the personal data you have collected, you should manually delete it before 2 years.
+
+For any personal data stored in other approved software or tools, you may need to manually delete the data within the retention period.
+
+### Types of personal data gathered in user research
+
+In user research, we collect and manage personal data in lots of ways. This could include (but is not limited to):
+
+- transcripts or automated summaries of interviews
+- video or audio recordings
+- surveys
+- participant recruitment emails, panels, lists and trackers
+- consent forms
+
+Personal data is any information that could be used to identify a living individual. This includes information that could be used to indirectly identify someone when matched with other information about them.
+
+Personal data is:
+
+- data that could be used to identify somebody, like their name, address, occupation or date of birth
+- data that when combined with other data could identify someone, like their school, job role, dietary restrictions, access needs or ethnicity
+- special category data, which includes an individual's racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, health (including topics like disability, pregnancy, gender reassignment), sex life or sexual orientation
+
+
+
+
+
+
+
+{% endmarkdown%}
+{% endblock %}
+
+{# --------- Related content (right-hand column) -------------------------------- #}
+{% block related %}
+{% markdown %}
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Further help and advice</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="/community-of-practice/research-operations">Research operations team</a></li>
+</ul>
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Related content</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="/guidance/informed-consent-26/">How to gather and store informed consent</a></li>
+  <li><a class="govuk-link" href="https://educationgovuk.sharepoint.com/sites/lvewp00053" target="_blank">DfE data and information compliance hub (opens in a new tab, DfE SharePoint users only)</a></li>
+</ul>
+
+{% endmarkdown%}
+{% endblock %}
+
+
+
+

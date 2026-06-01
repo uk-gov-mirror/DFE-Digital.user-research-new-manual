@@ -1,0 +1,166 @@
+{% extends "layouts/detailed-guide.html" %}
+
+{% set selectedNav = "Guidance" %}
+{% set isGuidance = true %}
+
+{% set pageDescription = "How to handle the personal data you gather in user research compliantly and ethically" %}
+
+{% set guidanceTopic = "How to gather and store informed consent" %}
+{% set guidancePageName = "Set up a restricted folder in DfE SharePoint" %}
+{% set seoPageName = guidanceTopic + " - " + guidancePageName %}
+{% set pageRoot = "/guidance/personal-data-management-26/" %}
+{% set prevLinkText = "Check if you need a DPIA" %}
+{% set prevLinkURL = pageRoot + "2.html" %}
+{% set nextLinkText = "How to store UR personal data in DfE SharePoint and other software and tools" %}
+{% set nextLinkURL = pageRoot + "4.html" %}
+
+
+
+{# --------- Contents links ------------------------------------------------------ #}
+{% block contents %}
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}index.html">Overview</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}2.html">Check if you need a DPIA</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  Set up a restricted folder in DfE SharePoint
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}4.html">How to store UR personal data in DfE SharePoint and other software and tools</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}5.html">How to gather, use and share UR personal data correctly</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}6.html">What to do if a participant later asks for a copy of their data</a>
+</li>
+{% endblock %}
+
+{# --------- Main page content -------------------------------------------------- #}
+{% block content %}
+{% markdown %}
+
+
+All files containing personal data related to your user research must be stored in a restricted folder in DfE SharePoint. This restricted folder must:
+
+- be in a Workplace (SharePoint) library
+- only be accessible to people in DfE who need to use it
+- have the 'User Research 2 Years' retention label available to apply to files
+
+<div class="govuk-inset-text">
+<p>A Workplace (SharePoint) library is not the same as the file storage that comes with a Teams site, and works differently. You must not use Teams to store user research personal data in DfE.</p>
+<p><a href="https://educationgovuk.sharepoint.com/sites/lvewp00055">More information about Workplaces (SharePoint) in DfE (opens in a new tab, DfE SharePoint users only)</a></p>
+</div>
+
+
+### Check if your project already has a restricted folder for user research
+
+If you join a team or portfolio that already has a Workplace library with a restricted folder for user research, continue to use it. Ask your delivery manager or lead user researcher.
+
+Once you have access to the folder, check it meets the requirements below. Also check who has access to it and the permissions they have, how old the documents are, and the retention labels applied to them.
+
+### How to set up a new restricted folder
+
+To correctly set up a restricted folder for user research personal data, you or a team member must make a series of service requests to the Workplaces (Sharepoint) team in MyDfE.
+
+The service requests must be made by a content manager. This is a DfE civil servant who has taken the content manager online training. Any civil servant user researcher can be a content manager:   
+<a href="https://educationgovuk.sharepoint.com/sites/lvewp00055/SitePages/Workplace-Training.aspx">Content manager training (opens in a new tab, DfE SharePoint users only)</a>
+
+#### 1\. Make a service request for a new Workplace (if required)
+
+<div class="govuk-inset-text">
+<p>If your team already uses a Workplace library (not a Teams site) to store files, skip this step.</p>
+</div>
+
+In MyDfE, make a 'Workplaces (SharePoint)' service request. Select 'Create a new Workplace (SharePoint) site' in the dropdown.
+
+<a href="https://forms.office.com/e/Z0W1ShqD1w" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+Make a service request on MyDFE
+</a>
+
+#### 2\. Create a new folder with the correct naming format
+
+In the Workplace library, create a new folder.
+
+The name of this folder must start with "RF" - e.g. "RF UR personal data", "RF-curriculum-project-ur-data", etc.
+
+#### 3\. Make a service request to restrict the folder
+
+In MyDfE make a 'Workplaces (SharePoint)' service request. Select 'Restricted folder or document library Requests Workplaces (SharePoint) site' in the first dropdown, then 'Create a new restricted folder or document library'.
+
+In the field titled 'Please provide the name of the folder or document library that is to be restricted', enter the name of the folder you created in step 2, above.
+
+<a href="https://forms.office.com/e/Z0W1ShqD1w" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+Make a service request on MyDFE
+</a>
+
+#### 4\. Make a service request to make the retention label available
+
+<div class="govuk-inset-text">
+<p>If the 'User Research 2 Years' retention label is already available to apply to files in your Workplace library, skip this step.</p>
+</div>
+
+In MyDfE, make a 'Workplaces (SharePoint)' service request. Select 'General enquiries & support' in the first dropdown.
+
+In the field titled 'Please provide a detailed explanation of your request...' write:  
+<em>Please make the 'User Research 2 Years' retention label available to add to files in this Workplace:  
+[URL of your Workplace library]</em>
+
+<a href="https://forms.office.com/e/Z0W1ShqD1w" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+Make a service request on MyDFE
+</a>
+
+### Make sure only the right people can access the data
+
+Only give access to the restricted folder to people who need to use the personal data.
+
+For example, this could include:
+
+- team members attending research sessions, or taking part in analysis
+- a content manager in your team or portfolio who is not directly involved in the research but is helping to manage it
+- colleagues helping with participant recruitment
+
+Regularly review who has access to the folder and remove permissions from anybody who no longer needs it.
+
+You may find it helpful to have more than one restricted folder, e.g. one containing recordings and transcripts which is available to your team, and one containing recruitment data available to fewer people.
+
+To add and remove access permissions, make a 'Workplaces (SharePoint)' service request in MyDfE:
+
+<a href="https://forms.office.com/e/Z0W1ShqD1w" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+Make a service request on MyDFE
+</a>
+
+Select 'Restricted folder or document library Requests Workplaces (SharePoint) site' in the first dropdown, and 'Add users…' or 'Remove users from an existing restricted folder or document library'.
+
+Every person with access to personal data must follow all DfE data policies.
+
+
+
+
+
+{% endmarkdown%}
+{% endblock %}
+
+{# --------- Related content (right-hand column) -------------------------------- #}
+{% block related %}
+{% markdown %}
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Further help and advice</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="/community-of-practice/research-operations">Research operations team</a></li>
+</ul>
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Related content</h3>
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="/guidance/informed-consent-26/">How to gather and store informed consent</a></li>
+  <li><a class="govuk-link" href="https://educationgovuk.sharepoint.com/sites/lvewp00053" target="_blank">DfE data and information compliance hub (opens in a new tab, DfE SharePoint users only)</a></li>
+</ul>
+
+{% endmarkdown%}
+{% endblock %}
+
+
+
+
