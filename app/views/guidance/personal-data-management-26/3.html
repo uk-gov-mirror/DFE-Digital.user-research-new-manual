@@ -3,9 +3,9 @@
 {% set selectedNav = "Guidance" %}
 {% set isGuidance = true %}
 
-{% set pageDescription = "How to handle the personal data you gather in user research compliantly and ethically" %}
+{% set pageDescription = "How to compliantly and ethically collect, store, use and share personal data gathered in user research" %}
 
-{% set guidanceTopic = "How to store, manage and use personal data" %}
+{% set guidanceTopic = "Handling personal data" %}
 {% set guidancePageName = "Set up the correct type of restricted folder in DfE SharePoint" %}
 {% set seoPageName = guidanceTopic + " - " + guidancePageName %}
 {% set pageRoot = "/guidance/personal-data-management-26/" %}
@@ -31,10 +31,13 @@
   <a href="{{pageRoot}}4.html">How to store UR personal data in DfE SharePoint and other software and tools</a>
 </li>
 <li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
-  <a href="{{pageRoot}}5.html">How to gather, use and share UR personal data correctly</a>
+  <a href="{{pageRoot}}5.html">Analysing, presenting and sharing user research personal data correctly</a>
 </li>
 <li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
-  <a href="{{pageRoot}}6.html">What to do if a participant later asks for a copy of their data</a>
+  <a href="{{pageRoot}}6.html">Checklist for when your research has concluded or you leave a team</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}7.html">What to do if a participant later asks for a copy of their data</a>
 </li>
 {% endblock %}
 
@@ -51,7 +54,7 @@ All files containing personal data related to your user research must be stored 
 
 <div class="govuk-inset-text">
 <p>A Workplace (SharePoint) library is not the same as the file storage that comes with a Teams site, and works differently. You must not use Teams to store user research personal data in DfE.</p>
-<p><a href="https://educationgovuk.sharepoint.com/sites/lvewp00055">More information about Workplaces (SharePoint) in DfE (opens in a new tab, DfE SharePoint users only)</a></p>
+<p><a href="https://educationgovuk.sharepoint.com/sites/lvewp00055" target="_blank">More information about Workplaces (SharePoint) in DfE (opens in a new tab, DfE SharePoint users only)</a></p>
 </div>
 
 
@@ -66,18 +69,16 @@ Once you have access to the folder, check it meets the requirements below. Also 
 To correctly set up a restricted folder for user research personal data, you or a team member must make a series of service requests to the Workplaces (Sharepoint) team in MyDfE.
 
 The service requests must be made by a content manager. This is a DfE civil servant who has taken the content manager online training. Any civil servant user researcher can be a content manager:   
-<a href="https://educationgovuk.sharepoint.com/sites/lvewp00055/SitePages/Workplace-Training.aspx">Content manager training (opens in a new tab, DfE SharePoint users only)</a>
+<a href="https://educationgovuk.sharepoint.com/sites/lvewp00055/SitePages/Workplace-Training.aspx" target="_blank">Content manager training (opens in a new tab, DfE SharePoint users only)</a>
 
 #### 1\. Make a service request for a new Workplace (if required)
 
-<div class="govuk-inset-text">
-<p>If your team already uses a Workplace library (not a Teams site) to store files, skip this step.</p>
-</div>
+If your team already uses a Workplace library (not a Teams site) to store files, skip this step.
 
 In MyDfE, make a 'Workplaces (SharePoint)' service request. Select 'Create a new Workplace (SharePoint) site' in the dropdown.
 
-<a href="https://forms.office.com/e/Z0W1ShqD1w" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
-Make a service request on MyDFE
+<a href="https://forms.office.com/e/Z0W1ShqD1w" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+Request a new Workplace (SharePoint) library
 </a>
 
 #### 2\. Create a new folder with the correct naming format
@@ -92,24 +93,25 @@ In MyDfE make a 'Workplaces (SharePoint)' service request. Select 'Restricted fo
 
 In the field titled 'Please provide the name of the folder or document library that is to be restricted', enter the name of the folder you created in step 2, above.
 
-<a href="https://forms.office.com/e/Z0W1ShqD1w" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
-Make a service request on MyDFE
+<a href="https://forms.office.com/e/Z0W1ShqD1w" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+Request to make a folder restricted
 </a>
 
 #### 4\. Make a service request to make the retention label available
 
-<div class="govuk-inset-text">
-<p>If the 'User Research 2 Years' retention label is already available to apply to files in your Workplace library, skip this step.</p>
-</div>
+If the 'User Research 2 Years' retention label is already available to apply to files in your Workplace library, skip this step.
 
 In MyDfE, make a 'Workplaces (SharePoint)' service request. Select 'General enquiries & support' in the first dropdown.
 
-In the field titled 'Please provide a detailed explanation of your request...' write:  
-<em>Please make the 'User Research 2 Years' retention label available to add to files in this Workplace:  
-[URL of your Workplace library]</em>
+In the field titled 'Please provide a detailed explanation of your request...' write:
 
-<a href="https://forms.office.com/e/Z0W1ShqD1w" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
-Make a service request on MyDFE
+<code class="textSnippet">
+Please make the 'User Research 2 Years' retention label available in this Workplace: <br />
+[URL of your Workplace library]
+</code>
+
+<a href="https://forms.office.com/e/Z0W1ShqD1w" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+Request to add a retention label
 </a>
 
 ### Make sure only the right people can access the data
@@ -126,10 +128,10 @@ Regularly review who has access to the folder and remove permissions from anybod
 
 You may find it helpful to have more than one restricted folder, e.g. one containing recordings and transcripts which is available to your team, and one containing recruitment data available to fewer people.
 
-To add and remove access permissions, make a 'Workplaces (SharePoint)' service request in MyDfE:
+To add and remove access permissions on a restricted folder, make a 'Workplaces (SharePoint)' service request in MyDfE:
 
 <a href="https://forms.office.com/e/Z0W1ShqD1w" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
-Make a service request on MyDFE
+Request to add or remove access permissions
 </a>
 
 Select 'Restricted folder or document library Requests Workplaces (SharePoint) site' in the first dropdown, and 'Add users…' or 'Remove users from an existing restricted folder or document library'.

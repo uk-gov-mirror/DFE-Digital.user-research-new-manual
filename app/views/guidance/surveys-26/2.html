@@ -1,0 +1,136 @@
+{% extends "layouts/detailed-guide.html" %}
+
+{% set selectedNav = "Guidance" %}
+{% set isGuidance = true %}
+
+{% set pageDescription = "When you must get approval to run a survey, survey tools available to use in DfE, and gathering service feedback" %}
+
+{% set guidanceTopic = "Surveys and feedback forms" %}
+{% set guidancePageName = "Get approval to use a survey (survey champion peer review)" %}
+{% set seoPageName = guidanceTopic + " - " + guidancePageName %}
+{% set pageRoot = "/guidance/surveys-26/" %}
+{% set prevLinkText = "Overview" %}
+{% set prevLinkURL = pageRoot + "index.html" %}
+{% set nextLinkText = "Use the correct survey software and informed consent wording" %}
+{% set nextLinkURL = pageRoot + "3.html" %}
+
+{# --------- Contents links ------------------------------------------------------ #}
+{% block contents %}
+
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}index.html">Overview</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  Get approval to use a survey (survey champion peer review)
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}3.html">Use the correct survey software<!--, template--> and informed consent wording</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}4.html">User feedback forms on services (exit surveys)</a>
+</li>
+
+
+{% endblock %}
+
+{# --------- Main page content -------------------------------------------------- #}
+{% block content %}
+{% markdown %}
+
+Some surveys must be approved before you publish them. The process to do this is a survey champions peer review.
+
+The review will confirm that the survey is appropriate for your research goals, with a design and distribution plan that is likely to be successful and any ethical risks identified and mitigated.
+
+### Surveys that require approval
+
+You must get a survey champions peer review before publishing a survey where any of the following is true:
+
+- The survey uses structured, closed questions intended to allow you to quantify responses
+- It will be sent to a large number of people
+- The data gathered may be used to make statistically valid claims (in your own synthesis and playback, or if somebody else uses your data or insights in the future)
+
+These types of survey tend to be used to quantify knowledge, attitudes or beliefs from a representative sample of a population of users.
+
+They require approval because if the survey and distribution are not planned and designed well, they can carry additional risks to the department and participants to some other user research methods.
+
+If you are not sure whether your planned survey requires approval, ask in the survey champions Teams channel.
+
+<div class="govuk-inset-text">
+<p>Survey-like methods that do not normally require survey champion approval include forms used to collect open text responses for qualitative analysis, card sorts, tree tests, standard user feedback forms on services (exit surveys) and participant recruitment sign-ups and screeners.<p>
+</div>
+
+### Before requesting an approval
+
+#### Check for existing data or insight sources that meet your needs
+
+DfE has many existing sources of data. You should explore whether the data you need has already been gathered.
+
+This could be omnibus study findings, statutory data gathered from education providers, web analytics data, service data, or insight or data from other user researchers working with similar users.
+
+You may also be able to add your questions to an upcoming social research survey.
+
+<ul>
+<li><a href="/research-insight/other-insight-sources">List of sources of existing DfE data and insight</a></li>
+<li><a href="https://educationgovuk.sharepoint.com/sites/sarpi/g/AC/Social%20Research.aspx" target="_blank">DfE social research (opens in a new tab, DfE SharePoint users only)</a></li>
+</ul>
+
+#### Confirm that a survey is the best method
+
+Use this checklist to confirm that a questionnaire survey is an appropriate method for your research need. If your answer to any of these questions is no, consider a different method or approach.
+
+- Are you and your team clear about the purpose of the survey, the value it will provide, and how you will use it alongside other user research methods?
+- Will a survey give you the level of detail you need from respondents to support your research goals?
+- Are you confident of getting a survey response rate that can provide statistically valid findings?
+- If you do not get a response rate which allows for statistically valid findings, are you comfortable with people making decisions from the data you collect?
+- Is the time you are asking of your respondents proportionate to the benefits of doing the survey? This is especially important if you are sampling front-line workers in the education, skills and care sectors.
+
+#### Design your survey and communication strategy
+
+Use these resources when designing your survey:
+
+<ul>
+  <li><a href="https://educationgovuk.sharepoint.com/:w:/r/sites/lvewp00449/WorkplaceDocuments/2.%20Templates%20and%20resources/Questionnaire%20Design/Survey%20peer%20review%20checklist.docx?d=wb949f9b280a34c35b349332570be0b12&csf=1&web=1&e=f94vlO" target="_blank">The peer review checklist used in a survey champion peer review (opens in a new tab, DfE SharePoint users only)</a></li>
+  <li><a href="https://educationgovuk.sharepoint.com/:w:/r/sites/lvewp00449/WorkplaceDocuments/2.%20Templates%20and%20resources/Questionnaire%20Design/Survey%20Top%20Tips.docx?d=w52b3a90762054c51aa5c567aea3e73cf&csf=1&web=1&e=cYRJDg" target="_blank">Tips and guidance to help you design a great survey and communication strategy (opens in a new tab, DfE SharePoint users only)</a></li>
+</ul>
+
+For more help and advice, contact the survey champions.
+
+### Request a survey champion review
+
+Post in the survey champions Teams channel, sharing your survey design as a Word document.
+
+<p><a href="Survey champions Teams channel (opens in a new tab, DfE Teams users only)" target="_blank">https://teams.microsoft.com/l/channel/19%3A5075c2c5f6994899b10d69c7bd6414aa%40thread.tacv2/UR%20Survey%20Champions?groupId=1d4fe322-a6c8-4727-9a9c-bf682657ffe9&tenantId=fad277c9-c60a-4da1-b5f3-b3b8b34a82f9</a></p>
+
+
+#### The review process
+
+A Survey Champion will be assigned, who will aim to conduct the peer review within 3 working days. They will send you feedback describing any changes they recommend and any gaps or risks you must answer before publishing.
+
+The survey champion will usually communicate with you over Teams messages or email, although sometimes, if required, they may set up a call with you.
+
+If you need to make changes, do this and re-submit to the survey champion.
+
+You must not publish your survey until the survey champion has approved it.
+
+In rare cases a survey may be deemed high risk and submitted to a lead or senior user Researcher for review. This may take longer than 3 days. High risk may be a result of questions around the contentiousness of the topic, ethics of the approach, reputational risk to DfE, or potential duplication of existing work.
+
+{% endmarkdown%}
+{% endblock %}
+
+{# --------- Related content (right-hand column) -------------------------------- #}
+{% block related %}
+{% markdown %}
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Further help and advice</h3>
+
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="https://teams.microsoft.com/l/channel/19%3A5075c2c5f6994899b10d69c7bd6414aa%40thread.tacv2/UR%20Survey%20Champions?groupId=1d4fe322-a6c8-4727-9a9c-bf682657ffe9&tenantId=fad277c9-c60a-4da1-b5f3-b3b8b34a82f9">Survey champions Teams channel (opens in a new tab, DfE Teams users only)</a></li>
+  <li><a class="govuk-link" href="/community-of-practice/leadership-team">Head of user research and lead user researchers</a></li>
+</ul>
+
+{% endmarkdown%}
+{% endblock %}
+
+
+
+

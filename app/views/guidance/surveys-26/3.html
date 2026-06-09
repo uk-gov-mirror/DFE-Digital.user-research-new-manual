@@ -1,0 +1,120 @@
+{% extends "layouts/detailed-guide.html" %}
+
+{% set selectedNav = "Guidance" %}
+{% set isGuidance = true %}
+
+{% set pageDescription = "When you must get approval to run a survey, survey tools available to use in DfE, and gathering service feedback" %}
+
+{% set guidanceTopic = "Surveys and feedback forms" %}
+{% set guidancePageName = "Use the correct survey software and informed consent wording" %}
+{% set seoPageName = guidanceTopic + " - " + guidancePageName %}
+{% set pageRoot = "/guidance/surveys-26/" %}
+{% set prevLinkText = "Get approval to use a survey (survey champion peer review)" %}
+{% set prevLinkURL = pageRoot + "2.html" %}
+{% set nextLinkText = "User feedback forms on services (exit surveys)" %}
+{% set nextLinkURL = pageRoot + "4.html" %}
+
+{# --------- Contents links ------------------------------------------------------ #}
+{% block contents %}
+
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}index.html">Overview</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}2.html">Get approval to use a survey (survey champion peer review)</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  Use the correct survey software<!--, template--> and informed consent wording
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}4.html">User feedback forms on services (exit surveys)</a>
+</li>
+
+
+{% endblock %}
+
+{# --------- Main page content -------------------------------------------------- #}
+{% block content %}
+{% markdown %}
+
+You must only use appropriate, approved software for your survey<!--, using an approved DfE-branded template where required-->. You must also always use the correct informed consent wording.
+
+### Which survey software to use
+
+There are two standard survey software tools available to all DfE user researchers: Qualtrics and Microsoft Forms.
+
+Your team or business area may also have other approved tools available for you to use. Check with your delivery manager or lead user researcher. You must never use a survey tool that hasn't been approved for use in DfE.
+
+<ul>
+<li><a href="https://teams.microsoft.com/l/channel/19%3A1b2b8312032741f1969e1d9191de416f%40thread.tacv2/Research%20Operations%20Support?groupId=1d4fe322-a6c8-4727-9a9c-bf682657ffe9&tenantId=fad277c9-c60a-4da1-b5f3-b3b8b34a82f9" target="_blank">Get a Qualtrics user account from research operations (opens in a new tab, DfE Teams users only)</a></li>
+<li><a href="/templates-and-tools/specialist-software-and-hardware/">List of software and tools available to user researchers in DfE</a></li>
+</ul>
+
+The tool you should use depends on the audience, type and complexity of the survey.
+
+#### Surveys that required a survey champions review
+
+If your respondents are people outside of DfE, you must always use Qualtrics.
+
+<!-- with the correct design template added (see below)-->
+
+If your respondents are internal DfE staff only, you can use Qualtrics or MS Forms. Qualtrics will be more appropriate if you want:
+
+- complex branching or logic
+- advanced question types
+- to schedule when invitations are sent, or use a range of methods for sending invitations
+- to make claims of statistical significance in your data
+- to analyse data within the tool (rather than in Excel or other software)
+
+#### Other survey-like methods
+
+For other survey-like methods that do not require a survey champion approval (including forms used to collect open text responses for qualitative analysis, card sorts, tree tests, etc) you can use Qualtrics or MS Forms.
+
+#### Participant recruitment sign-ups and screeners
+
+Use MS Forms, unless your team is already using a different tool (e.g. a specialist panel management platform or CRM that has been approved for use in DfE).
+
+<div class="govuk-inset-text">
+<p>We are currently developing new guidance and standards for user research participant recruitment panels and lists. Look out for announcements in the user research community Teams channel.</p>
+</div>
+
+#### User feedback forms on services (exit surveys)
+
+Follow this guidance to correctly gather user feedback on your service
+
+<!--
+
+### Use the correct design template in Qualtrics (DfE branding)
+
+For any survey in Qualtrics sent to people outside of DfE, you should use the DfE-branded design template. This helps ensure all DfE user research surveys are accessible and look consistent and professional.
+
+The template contains a DfE header with the correct logo, colours, typeface and type sizes.
+
+- Instructions for using the DfE branded template in Qualtrics (opens in a new tab, DfE users only)
+
+-->
+
+### Gather informed consent correctly
+
+You must gather informed consent from all survey participants before they take part in any survey, using an approved informed consent wording for surveys:
+
+- [Approved informed consent form templates for user research](/guidance/informed-consent-26/4)
+
+{% endmarkdown%}
+{% endblock %}
+
+{# --------- Related content (right-hand column) -------------------------------- #}
+{% block related %}
+{% markdown %}
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Further help and advice</h3>
+
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="https://teams.microsoft.com/l/channel/19%3A5075c2c5f6994899b10d69c7bd6414aa%40thread.tacv2/UR%20Survey%20Champions?groupId=1d4fe322-a6c8-4727-9a9c-bf682657ffe9&tenantId=fad277c9-c60a-4da1-b5f3-b3b8b34a82f9">Survey champions Teams channel (opens in a new tab, DfE Teams users only)</a></li>
+  <li><a class="govuk-link" href="/community-of-practice/leadership-team">Head of user research and lead user researchers</a></li>
+</ul>
+
+{% endmarkdown%}
+{% endblock %}
+
+

@@ -14,3 +14,16 @@
 ul ul {
     margin:4px 0 0 16px;
 }
+
+code.textSnippet {
+display: block;
+    background: $color_dfe-grey-4;
+    padding: 16px;
+  font-family: Inter,sans-serif;
+  color: #0b0c0c;
+  font-size: 16px;
+  overflow-x: visible;
+  word-break: normal;
+  margin-bottom: 24px;
+  margin-top:-10px;
+}

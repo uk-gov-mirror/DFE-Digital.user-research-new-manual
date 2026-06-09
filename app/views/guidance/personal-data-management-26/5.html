@@ -3,15 +3,15 @@
 {% set selectedNav = "Guidance" %}
 {% set isGuidance = true %}
 
-{% set pageDescription = "How to handle the personal data you gather in user research compliantly and ethically" %}
+{% set pageDescription = "How to compliantly and ethically collect, store, use and share personal data gathered in user research" %}
 
-{% set guidanceTopic = "How to store, manage and use personal data" %}
-{% set guidancePageName = "How to gather, use and share UR personal data correctly" %}
+{% set guidanceTopic = "Handling personal data" %}
+{% set guidancePageName = "Analysing, presenting and sharing user research personal data correctly" %}
 {% set seoPageName = guidanceTopic + " - " + guidancePageName %}
 {% set pageRoot = "/guidance/personal-data-management-26/" %}
 {% set prevLinkText = "How to store UR personal data in DfE SharePoint and other software and tools" %}
 {% set prevLinkURL = pageRoot + "4.html" %}
-{% set nextLinkText = "What to do if a participant later asks for a copy of their data" %}
+{% set nextLinkText = "Checklist for when your research has concluded or you leave a team" %}
 {% set nextLinkURL = pageRoot + "6.html" %}
 
 
@@ -31,10 +31,13 @@
   <a href="{{pageRoot}}4.html">How to store UR personal data in DfE SharePoint and other software and tools</a>
 </li>
 <li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
-  How to gather, use and share UR personal data correctly
+  Analysing, presenting and sharing user research personal data correctly
 </li>
 <li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
-  <a href="{{pageRoot}}6.html">What to do if a participant later asks for a copy of their data</a>
+  <a href="{{pageRoot}}6.html">Checklist for when your research has concluded or you leave a team</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}7.html">What to do if a participant later asks for a copy of their data</a>
 </li>
 {% endblock %}
 
@@ -43,9 +46,50 @@
 {% markdown %}
 
 
-CONTENT TBC
+### Only use personal data in ways that have been agreed to
 
+You must only gather, manage and use personal data in ways you have said you will in your DPIA, and in informed consent.
+This means you must: 
 
+-	only gather and manage personal data in ways covered by the overarching user research DPIA or, if you were required to get a specific DPIA or screener for your project, the ways described in that.
+-	gather informed consent from every participant (using an approved DfE user research consent form and following the informed consent guidance) and only use a participants’ personal data in the ways they agree to. 
+
+See also:
+-	Check if you need a DPIA
+-	How to gather and store informed consent
+
+### What you can put in playbacks and artefacts
+
+You should pseudonymise your data in playbacks and UR outputs for your team and stakeholders.
+
+There is guidance on pseudonymising data on the DfE intranet:
+-	DfE data anonymisation, pseudonymisation and obfuscation handbook (DfE Data Compliance team) (PDF document, DfE SharePoint users only) 
+
+In user research, examples of doing this could be:
+
+-	Change identifiable job titles such as “West Midlands Safeguarding Lead” to “Regional Safeguarding Lead”
+-	Changing a directly identifiable school name like “St Elizabeth School, Newtown” to something generic, like “primary school in Greater Manchester”
+
+If participants have agreed in their informed consent form, you can use video clips and images of the participant.
+
+Be sensible about what content you use in playbacks and artefacts, but don't create unnecessary barriers when the participant has given their permission.
+
+### Sharing personal data gathered during your research with other teams or organisations
+
+Our approved consent forms cover the sharing of personal data gathered in user research with other teams in DfE and across government with an interest in the research. Participants give explicit agreement to this, so you must check before sharing that your research has used the correct consent form and that participants have agreed.
+
+All sharing must be proportionate to what the person or team you are sharing with needs. E.g. if they want to see a transcript, don't give access to the restricted folder that also contains your recruitment tracker.
+
+Speak to research operations if you need advice. They may tell you to contact DfE data protection.
+
+Managed service providers and other contracted suppliers working with your team will be covered by a data sharing agreement governing what data they can access. Speak to your delivery manager if you are not sure what to share with them.
+
+### Sharing participant recruitment lists and panel data with other teams in DfE
+
+<div class="govuk-inset-text">
+<p>We are currently writing new standards and guidance for keeping and sharing large lists and panels for participant recruitment.</p>
+<p>If you are planning to create a list or panel, want to share data you have already gathered with another DfE user researcher or team, or want to use another team's data, speak to research operations for advice.</p>
+</div>
 
 
 {% endmarkdown%}

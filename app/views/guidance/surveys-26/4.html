@@ -1,0 +1,101 @@
+{% extends "layouts/detailed-guide.html" %}
+
+{% set selectedNav = "Guidance" %}
+{% set isGuidance = true %}
+
+{% set pageDescription = "When you must get approval to run a survey, survey tools available to use in DfE, and gathering service feedback" %}
+
+{% set guidanceTopic = "Surveys and feedback forms" %}
+{% set guidancePageName = "User feedback forms on services (exit surveys)" %}
+{% set seoPageName = guidanceTopic + " - " + guidancePageName %}
+{% set pageRoot = "/guidance/surveys-26/" %}
+{% set prevLinkText = "Use the correct survey software and informed consent wording" %}
+{% set prevLinkURL = pageRoot + "3.html" %}
+
+{# --------- Contents links ------------------------------------------------------ #}
+{% block contents %}
+
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}index.html">Overview</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}2.html">Get approval to use a survey (survey champion peer review)</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}3.html">Use the correct survey software<!--, template--> and informed consent wording</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  User feedback forms on services (exit surveys)
+</li>
+
+
+{% endblock %}
+
+{# --------- Main page content -------------------------------------------------- #}
+{% block content %}
+{% markdown %}
+
+
+Every DfE service or product must have a way for users to give feedback during, or at the end of, their time using it, to tell you what they think of your service and to ensure your team is collecting the right metrics.
+
+A feedback page or form must be available as soon as users are using your service. This is normally in private beta.
+
+Gathering feedback on a service is different to user research, but the two work in tandem. Feedback is optional and something that a user actively chooses to do. It is reactive input from users about something they have independently experienced, rather than a deliberate user research activity to understand users' needs and behaviours.
+
+### Product managers are responsible for ensuring feedback is gathered on services
+
+The product manager is responsible for ensuring that a feedback route is in place and that the correct metrics are gathered for your service.
+
+They are also responsible for ensuring that any data is analysed and reviewed (with the help of a business, data or performance analyst) and that this monitored to understand where future action needs to be considered.
+
+User researchers should use the data gathered as a source of insight into users' opinions of the service having used it.
+
+### How to gather user feedback from users for your service
+
+Your team must add a page or form within your service using the correct design pattern. Do not use a non-standard design pattern or third-party survey software (e.g. MS Teams or Qualtrics) to collect feedback from users.
+
+
+<div class="govuk-inset-text">
+
+  We are standardising the way we collect user feedback across all DfE services. A DDT Standard will be published in autumn 2026 to govern this. If your service currently uses a non-standard design pattern or third-party survey software to collect feedback, then your team should plan now to migrate to the correct design pattern.
+
+</div>
+
+#### Transactional services
+
+Feedback should be requested at the end of the transaction.
+
+If your service is hosted on GOV.UK you must use the [GOV.UK feedback page](https://www.gov.uk/service-manual/service-assessments/get-feedback-page).
+
+If your service is on an education domain (education.gov.uk), use the ["ask users for feedback" DfE design pattern](https://design.education.gov.uk/design-system/patterns/ask-users-for-feedback).
+
+#### Non-transactional services
+
+Decide where to show the feedback page to the user, for example when the user signs out.
+
+A feedback link also forms part of the [phase banner](https://design-system.service.gov.uk/components/phase-banner/), although this is not widely used.
+
+### Help and support
+
+<p>For further help and support about user feedback forms on services, <a href="https://teams.microsoft.com/l/chat/0/0?users=debbie.blanchard@education.gov.uk" target="_blank">contact the head of product management (opens in a new tab, DfE Teams users only)</a>.</p>
+
+{% endmarkdown%}
+{% endblock %}
+
+{# --------- Related content (right-hand column) -------------------------------- #}
+{% block related %}
+{% markdown %}
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Further help and advice</h3>
+
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="https://teams.microsoft.com/l/channel/19%3A5075c2c5f6994899b10d69c7bd6414aa%40thread.tacv2/UR%20Survey%20Champions?groupId=1d4fe322-a6c8-4727-9a9c-bf682657ffe9&tenantId=fad277c9-c60a-4da1-b5f3-b3b8b34a82f9">Survey champions Teams channel (opens in a new tab, DfE Teams users only)</a></li>
+  <li><a class="govuk-link" href="/community-of-practice/leadership-team">Head of user research and lead user researchers</a></li>
+</ul>
+
+{% endmarkdown%}
+{% endblock %}
+
+
+
+

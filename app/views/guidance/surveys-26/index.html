@@ -1,0 +1,77 @@
+{% extends "layouts/detailed-guide.html" %}
+
+{% set selectedNav = "Guidance" %}
+{% set isGuidance = true %}
+
+{% set pageDescription = "When you must get approval to run a survey, survey tools available to use in DfE, and gathering service feedback" %}
+
+{% set guidanceTopic = "Surveys and feedback forms" %}
+{% set guidancePageName = "Overview" %}
+{% set seoPageName = guidanceTopic %}
+{% set pageRoot = "/guidance/surveys-26/" %}
+{% set nextLinkText = "Get approval to use a survey (survey champion peer review)" %}
+{% set nextLinkURL = pageRoot + "2.html" %}
+
+
+{# --------- Contents links ------------------------------------------------------ #}
+{% block contents %}
+
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  Overview
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}2.html">Get approval to use a survey (survey champion peer review)</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}3.html">Use the correct survey software<!--, template--> and informed consent wording</a>
+</li>
+<li style="list-style-type:'&mdash;'; padding-left:10px; margin-bottom:0.4em;">
+  <a href="{{pageRoot}}4.html">User feedback forms on services (exit surveys)</a>
+</li>
+
+{% endblock %}
+
+{# --------- Main page content -------------------------------------------------- #}
+{% block content %}
+{% markdown %}
+
+Some surveys must be approved (with a survey champions peer review) before you can use them in your user research. This depends on the type of survey you intend to use and how the data you gather will be used.
+
+You must use the correct approved survey software for the type of survey you are planning<!--, including using the correct design template-->.
+
+You must gather informed consent from every survey respondent, using the correct consent wording.
+
+Note that user feedback forms on services (exit surveys) do not require a survey champions review, but must use a standard DfE approach to gathering feedback.
+[Guidance to correctly gather user feedback on your service](/guidance/surveys-26/4)
+
+### Survey champions
+
+Survey champions are user researchers with experience or training in survey design who peer review surveys to ensure they are designed well and will be distributed effectively and ethically.
+
+They can also give advice on how to plan and design a high-quality survey, analyse the data correctly and share and present survey findings appropriately.
+
+Any user researcher with survey design experience can become a survey champion. Ask for details in the survey champions Teams channel.
+
+<p><a href="https://teams.microsoft.com/l/channel/19%3A5075c2c5f6994899b10d69c7bd6414aa%40thread.tacv2/UR%20Survey%20Champions?groupId=1d4fe322-a6c8-4727-9a9c-bf682657ffe9&tenantId=fad277c9-c60a-4da1-b5f3-b3b8b34a82f9" target="_blank">Survey champions Teams channel (opens in a new tab, DfE Teams users only)</a></p>
+
+
+{% endmarkdown%}
+{% endblock %}
+
+{# --------- Related content (right-hand column) -------------------------------- #}
+{% block related %}
+{% markdown %}
+
+<h3 class="govuk-heading-s govuk-!-padding-top-3">Further help and advice</h3>
+
+<ul class="govuk-list govuk-list--spaced govuk-body-s">
+  <li><a class="govuk-link" href="https://teams.microsoft.com/l/channel/19%3A5075c2c5f6994899b10d69c7bd6414aa%40thread.tacv2/UR%20Survey%20Champions?groupId=1d4fe322-a6c8-4727-9a9c-bf682657ffe9&tenantId=fad277c9-c60a-4da1-b5f3-b3b8b34a82f9">Survey champions Teams channel (opens in a new tab, DfE Teams users only)</a></li>
+  <li><a class="govuk-link" href="/community-of-practice/leadership-team">Head of user research and lead user researchers</a></li>
+</ul>
+
+{% endmarkdown%}
+{% endblock %}
+
+
+
+
