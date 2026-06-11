@@ -88,40 +88,15 @@ app.use((req, res, next) => {
 });
 
 // 301 redirects
-app.get('/standards-and-principles/', function (req, res) {
-  res.redirect(301, '/standards/');
-});
-app.get('/standards-and-principles/participant-safeguarding/', function (req, res) {
-  res.redirect(301, '/standards/participant-safeguarding/');
-});
-app.get('/standards-and-principles/personal-data-handling/', function (req, res) {
-  res.redirect(301, '/standards/personal-data-handling/');
-});
-app.get('/standards-and-principles/principles/', function (req, res) {
-  res.redirect(301, '/community-of-practice/principles');
-});
-app.get('/standards-and-principles/principles/principle-1', function (req, res) {
-  res.redirect(301, '/community-of-practice/principles');
-});
-app.get('/standards-and-principles/principles/principle-2', function (req, res) {
-  res.redirect(301, '/community-of-practice/principles');
-});
-app.get('/standards-and-principles/principles/principle-3', function (req, res) {
-  res.redirect(301, '/community-of-practice/principles');
-});
-app.get('/standards-and-principles/principles/principle-4', function (req, res) {
-  res.redirect(301, '/community-of-practice/principles');
-});
-app.get('/standards-and-principles/principles/principle-5', function (req, res) {
-  res.redirect(301, '/community-of-practice/principles');
-});
-app.get('/standards-and-principles/principles/principle-6', function (req, res) {
-  res.redirect(301, '/community-of-practice/principles');
-});
-
 
 app.get('/community-of-practice/ur-slack-channels', function (req, res) {
   res.redirect(301, '/community-of-practice/ur-community-channels');
+});
+app.get('/standards/', function (req, res) {
+  res.redirect(301, 'https://standards.education.gov.uk');
+});
+app.get('/standards', function (req, res) {
+  res.redirect(301, 'https://standards.education.gov.uk');
 });
 app.get('/guidance/user-research-in-the-civil-service/researching-in-pre-election-periods', function (req, res) {
   res.redirect(301, '/guidance/pre-election-periods-26');
@@ -132,7 +107,27 @@ app.get('/guidance/recruiting-participants/paying-incentives', function (req, re
 app.get('/guidance/ethics-and-safeguarding/gaining-informed-consent', function (req, res) {
   res.redirect(301, '/guidance/informed-consent-26');
 });
-
+app.get('/guidance/survey-design-champions', function (req, res) {
+  res.redirect(301, '/guidance/surveys-26');
+});
+app.get('/guidance/how-to-manage-participant-personal-data/', function (req, res) {
+  res.redirect(301, '/guidance/personal-data-management-26');
+});
+app.get('/guidance/how-to-manage-participant-personal-data/after-research-is-finished', function (req, res) {
+  res.redirect(301, '/guidance/personal-data-management-26');
+});
+app.get('/guidance/how-to-manage-participant-personal-data/anonymising-personal-data', function (req, res) {
+  res.redirect(301, '/guidance/personal-data-management-26');
+});
+app.get('/guidance/how-to-manage-participant-personal-data/using-lists-for-recruitment', function (req, res) {
+  res.redirect(301, '/guidance/personal-data-management-26');
+});
+app.get('/guidance/how-to-manage-participant-personal-data/collecting-data-during-your-research', function (req, res) {
+  res.redirect(301, '/guidance/personal-data-management-26');
+});
+app.get('/guidance/how-to-manage-participant-personal-data/planning-project-or-phase', function (req, res) {
+  res.redirect(301, '/guidance/personal-data-management-26');
+});
 
 
 // Render sitemap.xml in XML format

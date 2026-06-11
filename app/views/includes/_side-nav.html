@@ -46,34 +46,6 @@
   }
 ] %}
 
-{% set ur_standards = [
-  {
-    title: "Standards",
-    url: "/standards/"
-  }
-] %}
-{% set ur_standards_standards = [
-  {
-    title: "Participant recruitment",
-    url: "/standards/participant-recruitment/"
-  },
-  {
-    title: "Research planning",
-    url: "/standards/research-planning/"
-  },
-  {
-    title: "Researcher safety",
-    url: "/standards/researcher-safety/"
-  },
-  {
-    title: "Safeguarding research participants",
-    url: "/standards/safeguarding-research-particpants/"
-  },
-  {
-    title: "Secure handling of participant data",
-    url: "/standards/secure-handling-of-particpant-data/"
-  }
-] %}
 
 {% set guidance__ethics_safeguarding = [
   {
@@ -244,27 +216,6 @@
 
   {% endif %}
   
-
-  {%- if selectedNav == "Standards" %}
-    
-    <ul class="dfe-vertical-nav__section">
-      {% for item in ur_standards %}
-        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
-          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-
-    <h2 class="dfe-vertical-nav--section-header">DfE's user research standards</h2>
-    <ul class="dfe-vertical-nav__section">
-      {% for item in ur_standards_standards %}
-        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
-          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-
-  {% endif %}
 
   {%- if selectedNav == "Guidance" %}
 
