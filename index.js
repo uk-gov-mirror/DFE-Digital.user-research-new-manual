@@ -128,6 +128,39 @@ app.get('/guidance/how-to-manage-participant-personal-data/collecting-data-durin
 app.get('/guidance/how-to-manage-participant-personal-data/planning-project-or-phase', function (req, res) {
   res.redirect(301, '/guidance/personal-data-management-26');
 });
+app.get('/guidance/working-with-a-ur-in-your-team/what-user-researchers-do', function (req, res) {
+  res.redirect(301, '/guidance/');
+});
+app.get('/guidance/user-research-in-the-civil-service/index', function (req, res) {
+  res.redirect(301, '/guidance/');
+});
+app.get('/guidance/recruiting-urs/contractors-and-statements-of-work', function (req, res) {
+  res.redirect(301, '/guidance/');
+});
+app.get('/guidance/recruiting-urs/recruiting-a-user-researcher', function (req, res) {
+  res.redirect(301, '/guidance/');
+});
+app.get('/guidance/recruiting-participants/recruitment-panels', function (req, res) {
+  res.redirect(301, '/guidance/');
+});
+app.get('/guidance/inclusive-research/', function (req, res) {
+  res.redirect(301, '/guidance/');
+});
+app.get('/guidance/inclusive-research/research-users-access-needs', function (req, res) {
+  res.redirect(301, '/guidance/');
+});
+app.get('/guidance/ethics-and-safeguarding/using-social-media-in-user-research', function (req, res) {
+  res.redirect(301, '/guidance/');
+});
+app.get('/guidance/ethics-and-safeguarding/reducing-burden-on-dfes-users', function (req, res) {
+  res.redirect(301, '/guidance/');
+});
+
+
+
+
+
+
 
 
 // Render sitemap.xml in XML format
