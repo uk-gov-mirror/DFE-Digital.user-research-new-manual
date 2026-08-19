@@ -89,6 +89,21 @@ app.use((req, res, next) => {
 
 // 301 redirects
 
+app.get('/your-ur-career-at-dfe/information-for-new-starters', function (req, res) {
+  res.redirect(301, '/community-of-practice/');
+});
+app.get('/your-ur-career-at-dfe/applying-for-dfe-ur-jobs', function (req, res) {
+  res.redirect(301, '/');
+});
+app.get('/your-ur-career-at-dfe/', function (req, res) {
+  res.redirect(301, '/');
+});
+app.get('/your-ur-career-at-dfe/objectives-profession-management-and-mentoring', function (req, res) {
+  res.redirect(301, '/');
+});
+app.get('/your-ur-career-at-dfe/training-and-online-resources', function (req, res) {
+  res.redirect(301, '/');
+});
 app.get('/community-of-practice/ur-slack-channels', function (req, res) {
   res.redirect(301, '/community-of-practice/ur-community-channels');
 });

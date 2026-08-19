@@ -1,10 +1,10 @@
 {% set community_of_practice = [
   {
-    title: "About our user research community",
+    title: "Our user research community of practice",
     url: "/community-of-practice/"
   },{
-    title: "Our UR community principles",
-    url: "/community-of-practice/principles.html"
+    title: "Information for new starters",
+    url: "/your-ur-career-at-dfe/information-for-new-starters.html"
   },{
     title: "Community of practice meetups",
     url: "/community-of-practice/community-meetups.html"
@@ -20,9 +20,6 @@
   },{
     title: "Research operations team",
     url: "/community-of-practice/research-operations.html"
-  },{
-    title: "How we're developing UR at DfE",
-    url: "/community-of-practice/how-were-developing-ur-at-dfe.html"
   }
 ] %}
 
@@ -192,7 +189,7 @@
 
 <nav class="dfe-vertical-nav">
 
-  {%- if selectedNav === "Community" %}
+  {%- if selectedNav === "Community of practice" %}
 
   <ul class="dfe-vertical-nav__section">
     {% for item in community_of_practice %}
@@ -218,81 +215,6 @@
   
 
   {%- if selectedNav == "Guidance" %}
-
-    <!--<ul class="dfe-vertical-nav__section">
-      {%- if guidanceSection == "ethics_safeguarding" %}
-        {% for item in guidance__ethics_safeguarding %}
-          <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
-            <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
-          </li>
-        {% endfor %}
-      {% endif %}
-
-      {%- if guidanceSection == "inclusive_research" %}
-        {% for item in guidance__inclusive_research %}
-          <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
-            <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
-          </li>
-        {% endfor %}
-      {% endif %}
-
-      {%- if guidanceSection == "personal_data" %}
-        {% for item in guidance__personal_data %}
-        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
-          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
-        </li>
-        {% endfor %}
-      {% endif %}
-
-      {%- if guidanceSection == "planning" %}
-        {% for item in guidance__planning %}
-          <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
-            <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
-          </li>
-        {% endfor %}
-      {% endif %}
-
-      {%- if guidanceSection == "recruiting_particpants" %}
-        {% for item in guidance__recruiting_particpants %}
-          <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
-            <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
-          </li>
-        {% endfor %}
-      {% endif %}
-
-      {%- if guidanceSection == "recruiting_urs" %}
-        {% for item in guidance__recruiting_urs %}
-          <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
-            <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
-          </li>
-        {% endfor %}
-      {% endif %}
-
-      {%- if guidanceSection == "surveys" %}
-        {% for item in guidance__surveys %}
-          <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
-            <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
-          </li>
-        {% endfor %}
-      {% endif %}
-
-      {%- if guidanceSection == "civil_service" %}
-        {% for item in guidance__civil_service %}
-          <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
-            <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
-          </li>
-        {% endfor %}
-      {% endif %}
-
-      {%- if guidanceSection == "working_with_ur_in_team" %}
-        {% for item in guidance__working_with_ur_in_team %}
-          <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
-            <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
-          </li>
-        {% endfor %}
-      {% endif %}
-    </ul>-->
-
   {% endif %}
 
   {%- if selectedNav == "Templates and tools" %}
